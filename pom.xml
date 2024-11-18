@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.springSecurity</groupId>
-	<artifactId>springSecurityEx</artifactId>
+	<artifactId>springSecurity</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springSecurityEx</name>
 	<description>Basic understanding of spring security</description>
