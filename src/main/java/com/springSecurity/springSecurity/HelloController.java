@@ -1,5 +1,6 @@
 package com.springSecurity.springSecurity;
 
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -7,7 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @GetMapping("/")
-    public String greet(){
-        return "Welcome to developer application";
+    public String greet(HttpServletRequest httpServletRequest){
+
+        return "Welcome to developer application : " + httpServletRequest.getSession().getId();
     }
 }
